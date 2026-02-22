@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <title>sunnflwr's site</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+    <audio id="blip-audio" src="snd/blip.wav" preload="auto"></audio>
+
+        <div class="header">
+            <ul>
+                <li> <a href="index.html" class="linky">About Me</a></li>
+                <li><a href="music.html" class="linky">Music</a></li>
+                <li><a href="gallery.html" class="linky">Gallery</a></li>
+                <li><a href="blog.html" class="linky">Blog</a></li>
+                <li><a href="projects.html" class="linky">Works</a></li>
+            </ul>
+
+            <h1 class="Text">blablablablbalblablbablabblabla ey o yepy yepyep eyp aeysw edljs dhsjald hjsha djlshadjhljdhjl hasljdhjlsahdjlsahdjlhsadjlhsajlhsajldhjlsahdljhsajdashldhjsadhl jsadh jlsacvbjhsasikgyufgseaufryoiyoyioyioiyoyoiyoiyoiyoiyoi</h1>
+        </div>
+
+        <script>
+
+            function playHoverSound() {
+                var sound = document.getElementById('blip-audio');
+                sound.currentTime = 0; 
+                sound.play();
+            }
+
+            var links = document.querySelectorAll('.linky');
+
+            links.forEach(link => {
+            link.addEventListener('mouseover', playHoverSound);
+            });
+        </script>
+    </body>
+</html>
